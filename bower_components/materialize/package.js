@@ -11,6 +11,7 @@ Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
 
   api.use('jquery', 'client');
+  api.use('underscore');
 
   api.export('Materialize', 'client');
 
