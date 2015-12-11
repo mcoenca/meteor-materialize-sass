@@ -1,46 +1,73 @@
-# CHANGE LOG
-- 2015-06-26 upgrade to [0.97.0](https://github.com/Dogfalo/materialize/tree/v0.97.0#changelog)
-  -  Icon Change (*Breaking*):
+[![Travis CI](https://travis-ci.org/Dogfalo/materialize.svg?branch=master)](https://travis-ci.org/Dogfalo/materialize)[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Dogfalo/materialize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-    ```<i class="mdi-content-add"></i>``` is still supported.
+Materialize, a CSS Framework based on material design
 
-    However you should use ```<i class="material-icons">add</i>``` instead as
-    metioned in the materialize [doc](http://materializecss.com/icons.html).
+### Current Version : v0.97.3
 
-# INSTALL
-```
-$ meteor add fourseven:scss
-$ meteor add poetic:materialize-scss
-$ meteor remove materialize:materialize # if you have materialize installed
-```
+## Sass Requirements:
+- Ruby Sass 3.3+, LibSass 0.6+
 
-# SASS
-Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#controlling-load-order-since-200-beta_3) file used by fourseven:scss at the TOP of the file:
-```
-// You can override colors BEFORE materialize.scss:
-// $primary-color: blue;
+## Supported Browsers:
+Chrome 35+, Firefox 31+, Safari 7+, IE 10+
 
-// You can NOT use materialize color mixins since they are not imported yet.
-// WRONG! $primary-color: color("materialize-red", "lighten-2");
+## Changelog
+- v0.97.3 (Nov 15, 2015)
+  - Meteor font issues fixed
+  - Select rendering issue fixed
+  - Added Push and Pull to grid
+  - Dynamic accordion appends fixed
+- v0.97.2 (Nov 8, 2015)
+  - Image support inside select
+  - Optgroup supported in select
+  - Multiple select added
+  - Card styling fixes
+  - Breadcrumbs added
+  - Scrollable tabs
+  - Tooltips and dropdowns position themselves more intelligently inside the window
+  - FAB menu is click-toggleable
+  - Horizontal FAB support added
+- v0.97.1 (Sep 13, 2015)
+  - Added new range slider with uses noUiSlider to provide powerful options
+  - Added CSS for Chips
+  - Toasts support adding of html elements
+  - Fixed select destroy/creation bug
+  - Bugfixes for dropdown, badges, collections, scrollfire
+  - Added default preloader color variable
+  - File input now supports multiple files and dynamically loaded elements
+- v0.97.0 (June 21, 2015)
+  - **Documentation changed to use Official Google Icon web font**
+  - **Input errors added**
+  - Flicker on Firefox on dropdowns fixed
+  - Pagination made more responsive
+  - Modal now prevents scrolling
+  - Modal animation added
+  - Support for multiple modals added
+  - Programmatic control of FAB to open/close added
+  - Programmatic control of slider to play/pause added
+  - Plus many more bug fixes
+- v0.96.1 (April 6, 2015)
+  - Dropdown Fixes
+  - Materialize functions fixed for Meteor
+- v0.96.0 (April 1, 2015)
+  - **Toasts, transitions, scrollfire added under Materialize namespace**
+  - **Dropdown is now created as a child of its parent**
+  - Collapsibles supports nesting
+  - Modal Bottom Sheet added
+  - Indeterminate Checkboxes added
+  - New Checkbox Style Added
+  - Text Inputs supports placeholder/readonly
+  - Google Inbox-like Collapsible added
+  - Text Character Counter added
+  - Waves no longer breaks on SVG's
 
-// @import "your-awesome-color-varialbes.scss"
-@import ".meteor/local/build/programs/server/assets/packages/poetic_materialize-scss/bower_components/materialize/sass/materialize.scss";
-```
+- v0.95.3 (Feb 25, 2015)
+  - Parallax image loading / responsiveness fixes
+  - Date picker supports month/year as dropdown
+  - Dismissable collection items
+  - Avatar collection items
+  - Pagination Added
+  - ScrollFire fixes
 
-# ICONS
-Icons are automatically imported from this package.
 
-You do NOT have to add an additional head element mentioned at http://materializecss.com/icons.html.
-
-Read more about the MaterialIcons at https://google.github.io/material-design-icons/
-
-# JAVASCRIPT
-Javascript is automatically imported from this package.
-
-# NOTE
-- As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart your server.
-- If you update and miss the icons font, you should run ```meteor reset``` to get a fresh build.
-
-# VERSIONS
-- 1.1.x -> materialize version: 0.96.x
-- 1.2.x -> materialize version: 0.97.x
+## Contributing
+[Please read CONTRIBUTING.md for more information](CONTRIBUTING.md)
