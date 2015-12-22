@@ -11,6 +11,7 @@ Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
 
   api.use('jquery', 'client');
+  api.use('underscore');
   api.imply('jquery', 'client');
 
   var assets = [
@@ -39,6 +40,7 @@ Package.onUse(function (api) {
   addAssets(api, assets);
 
   api.addFiles([
+    'dist/js/fix_bind.js',
     'dist/js/materialize.js',
     'dist/css/materialize.css'
   ], 'client');
